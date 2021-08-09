@@ -1,0 +1,41 @@
+.modalManage {
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    .ant-table-row{
+        cursor: pointer;
+    }
+    .clickRowStyl {
+        background-color: #ccc;
+        cursor: pointer;
+    }
+
+    .treeClass-border {
+
+        width: 36%;
+
+
+        .treeClass {
+            border: 1px solid #ccc;
+            height: 100%;
+
+            .treeClass-title {
+                height: 40px;
+                width: 100%;
+                background-color: #ccc;
+                font-size: 16px;
+                padding-left: 20px;
+                line-height: 40px;
+            }
+
+            .treeClass-tree {
+                padding: 20px;
+                overflow: scroll;
+                height: calc(~'100% - 40px');
+            }
+        }
+
+    }
+
+}

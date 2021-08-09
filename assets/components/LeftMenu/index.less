@@ -1,0 +1,97 @@
+.left-menu {
+  width     : 200px;
+  height    : 100%;
+  background: #3887E5;
+  color     : #A2ABB3;
+  // overflow  : scroll;  
+  .open-menu {
+    width           : 100%;
+    height          : 24px;
+    text-align      : center;
+    line-height     : 24px;
+    background-image: linear-gradient(-180deg, rgba(32, 34, 41, 0.80) 0%, rgba(28, 35, 42, 0.60) 100%);
+  }
+  .title_version{
+    line-height: 40px;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: right;
+    span{
+      margin-right:20px;
+    }
+  }
+
+  .menuItem{
+    img{
+      margin-right: 10px;
+
+    }
+  }
+  .ant-menu {
+    height: calc(~'100% - 24px');
+    overflow-y: auto;
+  }
+  .ant-menu,
+  .ant-menu-item,
+  .ant-menu-item:hover,
+  .ant-menu-submenu-title,
+  .ant-menu-submenu-title:hover {
+    background-color: #3887E5
+  }
+  // .ant-menu-item{
+  //   background: #295FD1;
+  // }
+  .ant-menu-submenu{
+    .ant-menu-item{
+      background: #295FD1;
+    }
+  }
+  .ant-menu-submenu-title:focus {
+    background-color: #3887E5
+  }
+}
+
+.left-menu-collapsed {
+  width: 50px;
+}
+
+.ant-menu-inline-collapsed {
+  width: 50px;
+
+  .ant-menu-item,
+  .ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-item,
+  .ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-submenu>.ant-menu-submenu-title,
+  .ant-menu-submenu>.ant-menu-submenu-title {
+    padding: 0 16px !important;
+  }
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+  background-color: #2f343a;
+  border-left     : 2px solid #0283ff
+}
+
+.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub {
+  background-color: #424b52
+}
+
+.ant-menu-vertical .ant-menu-item,
+.ant-menu-vertical-left .ant-menu-item,
+.ant-menu-vertical-right .ant-menu-item,
+.ant-menu-inline .ant-menu-item,
+.ant-menu-vertical .ant-menu-submenu-title,
+.ant-menu-vertical-left .ant-menu-submenu-title,
+.ant-menu-vertical-right .ant-menu-submenu-title,
+.ant-menu-inline .ant-menu-submenu-title {
+  margin-top   : 0px;
+  margin-bottom: 0px
+}
+
+.ant-menu-vertical .ant-menu-item:not(:last-child),
+.ant-menu-vertical-left .ant-menu-item:not(:last-child),
+.ant-menu-vertical-right .ant-menu-item:not(:last-child),
+.ant-menu-inline .ant-menu-item:not(:last-child) {
+  margin-bottom: 0px;
+}
